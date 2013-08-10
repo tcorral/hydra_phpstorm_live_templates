@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Hydra">
+  <template name="hydra_add_extension_before_init" value="$HYDRA$.addExtensionBeforeInit($VAR$);&#10;$END$" description="Add a check before execute the init if the property exist" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA" expression="" defaultValue="&quot;Hydra&quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="&quot;{}&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_extend" value="$HYDRA$.extend('$ID_EXTENSION$', $EXTENSION$);&#10;$END$" description="Extend Hydra with plugins" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA" expression="" defaultValue="&quot;Hydra&quot;" alwaysStopAt="true" />
+    <variable name="ID_EXTENSION" expression="" defaultValue="&quot;extension-name&quot;" alwaysStopAt="true" />
+    <variable name="EXTENSION" expression="" defaultValue="&quot;{}&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_extend_module" value="$HYDRA_MODULE$.extend(&quot;$BASE_MODULE_NAME$&quot;, &quot;$EXTENDED_MODULE_NAME$&quot;, function ( bus ) {&#10;    return {&#10;        $END$&#10;    };&#10;} );" description="Extend a module" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA_MODULE" expression="" defaultValue="&quot;Hydra.module&quot;" alwaysStopAt="true" />
+    <variable name="BASE_MODULE_NAME" expression="" defaultValue="&quot;base-module-name&quot;" alwaysStopAt="true" />
+    <variable name="EXTENDED_MODULE_NAME" expression="" defaultValue="&quot;extended-module-name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_get_copy_channels" value="$HYDRA$.getCopyChannels();&#10;$END$" description="Returns a copy of the stored channels" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA" expression="" defaultValue="&quot;Hydra&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_get_copy_modules" value="$HYDRA$.getCopyModules();" description="Returns a copy of the stored modules" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA" expression="" defaultValue="&quot;Hydra&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_get_debug_mode" value="$HYDRA$.getDebug();" description="Check if debug mode is on or not" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA" expression="" defaultValue="&quot;Hydra&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_get_vars" value="$HYDRA_MODULE$.getVars();&#10;$END$" description="Get global vars" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA_MODULE" expression="" defaultValue="&quot;Hydra.module&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_is_module_started" value="$HYDRA_MODULE$.isModuleStarted('$MODULE_NAME$'$OPTIONAL$);&#10;$END$" description="Checks if a module has been started" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA_MODULE" expression="" defaultValue="&quot;Hydra.module&quot;" alwaysStopAt="true" />
+    <variable name="MODULE_NAME" expression="" defaultValue="&quot;module-name&quot;" alwaysStopAt="true" />
+    <variable name="OPTIONAL" expression="" defaultValue="&quot;, 'instance-id'&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_log" value="$HYDRA$.log($MESSAGE_TO_LOG$);&#10;$END$" description="Logs errors or messages" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MESSAGE_TO_LOG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_multiple_start" value="$HYDRA_MODULE$.start([$MODULE_NAMES$]$OPTIONAL$);&#10;$END$" description="Start more than one module with a single start sentence" toReformat="false" toShortenFQNames="true">
+    <variable name="HYDRA_MODULE" expression="" defaultValue="&quot;Hydra.module&quot;" alwaysStopAt="true" />
+    <variable name="MODULE_NAMES" expression="" defaultValue="&quot;'module-name', 'module-name2'&quot;" alwaysStopAt="true" />
+    <variable name="OPTIONAL" expression="" defaultValue="&quot;, ['instance-id', 'instance-id2'], [{}, {}], [true, false]&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_no_conflict" value="$HYDRA$.noConflict(&quot;$NAMESPACE$&quot;, $CONTEXT$, &quot;$NEW_NAME$&quot;);&#10;$END$" description="Sets a new name in a new context to avoid collision with other variables" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA" expression="" defaultValue="&quot;Hydra&quot;" alwaysStopAt="true" />
+    <variable name="NAMESPACE" expression="enum(&quot;module&quot;, &quot;bus&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTEXT" expression="" defaultValue="&quot;window&quot;" alwaysStopAt="true" />
+    <variable name="NEW_NAME" expression="" defaultValue="&quot;noCollision&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_overwrite_module" value="$HYDRA_MODULE$.extend(&quot;$BASE_MODULE_NAME$&quot;, function ( bus ) {&#10;    return {&#10;        $END$&#10;    };&#10;} );" description="Overwriting a registered module" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA_MODULE" expression="" defaultValue="&quot;Hydra.module&quot;" alwaysStopAt="true" />
+    <variable name="BASE_MODULE_NAME" expression="" defaultValue="&quot;base-module-name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_publish" value="$HYDRA_BUS$.publish('$CHANNEL$', '$EVENT_NAME$'$OPTIONAL$);&#10;$END$" description="Publish an event in one channel" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA_BUS" expression="" defaultValue="&quot;Hydra.bus&quot;" alwaysStopAt="true" />
+    <variable name="CHANNEL" expression="" defaultValue="&quot;channel&quot;" alwaysStopAt="true" />
+    <variable name="EVENT_NAME" expression="" defaultValue="&quot;item:action&quot;" alwaysStopAt="true" />
+    <variable name="OPTIONAL" expression="" defaultValue="&quot;, {}&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_register_module" value="$HYDRA_MODULE$.register(&quot;$MODULE_NAME$&quot;, function ( bus ) {&#10;    return {&#10;        init: function(){&#10;            $IMPLEMENT_INIT$&#10;        },&#10;        onDestroy: function(){&#10;            $IMPLEMENT_DESTROY$&#10;        }$END$&#10;    };&#10;} );" description="Register a module" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA_MODULE" expression="" defaultValue="&quot;Hydra.module&quot;" alwaysStopAt="true" />
+    <variable name="MODULE_NAME" expression="" defaultValue="&quot;module-name&quot;" alwaysStopAt="true" />
+    <variable name="IMPLEMENT_INIT" expression="" defaultValue="&quot;// Implement init code&quot;" alwaysStopAt="true" />
+    <variable name="IMPLEMENT_DESTROY" expression="" defaultValue="&quot;// Implement onDestroy code&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_set_debug_mode_off" value="$HYDRA$.setDebug(false);" description="Set debug mode off" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA" expression="" defaultValue="&quot;Hydra&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_set_debug_mode_on" value="$HYDRA$.setDebug(true);&#10;$END$" description="Sets debug mode on" toReformat="false" toShortenFQNames="true">
+    <variable name="HYDRA" expression="" defaultValue="&quot;Hydra&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_set_error_handler" value="$HYDRA$.setErrorHandler($ERRORHANDLER$);&#10;$END$" description="Set a new error handler" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA" expression="" defaultValue="&quot;Hydra&quot;" alwaysStopAt="true" />
+    <variable name="ERRORHANDLER" expression="" defaultValue="&quot;/*Singleton class with log and error methods*/&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_set_unblock_ui_mode_off" value="$HYDRA$.setUnblockUI(false);&#10;$END$" description="Set unblock UI mode off" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA" expression="" defaultValue="&quot;Hydra&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_set_unblock_ui_mode_on" value="$HYDRA$.setUnblockUI(true);&#10;$END$" description="Set unblock UI mode on" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA" expression="" defaultValue="&quot;Hydra&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_set_vars" value="$HYDRA_MODULE$.setVars($VAR$);&#10;$END$" description="Set global vars" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA_MODULE" expression="" defaultValue="&quot;Hydra.module&quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="&quot;{}&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_simple_start" value="$HYDRA_MODULE$.start('$MODULE_NAME$'$OPTIONALS$);&#10;$END$" description="Start a single module only with module name" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA_MODULE" expression="" defaultValue="&quot;Hydra.module&quot;" alwaysStopAt="true" />
+    <variable name="MODULE_NAME" expression="" defaultValue="&quot;module-name&quot;" alwaysStopAt="true" />
+    <variable name="OPTIONALS" expression="" defaultValue="&quot;,'instance-id', {}, true&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_start_all" value="$HYDRA_MODULE$.startAll();" description="Start all the modules at once" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA_MODULE" expression="" defaultValue="&quot;Hydra.module&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_stop" value="$HYDRA_MODULE$.stop('$MODULE_NAME$'$OPTIONAL$);&#10;$END$" description="Stop a module" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA_MODULE" expression="" defaultValue="&quot;Hydra.module&quot;" alwaysStopAt="true" />
+    <variable name="MODULE_NAME" expression="" defaultValue="&quot;module-name&quot;" alwaysStopAt="true" />
+    <variable name="OPTIONAL" expression="" defaultValue="&quot;, 'instance-id'&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_stop_all" value="$HYDRA_MODULE$.stopAll();&#10;$END$" description="Stops all the started modules" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA_MODULE" expression="" defaultValue="&quot;Hydra.module&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_subscribe_to" value="$HYDRA_BUS$.subscribeTo('$CHANNEL$', '$EVENT_NAME$', $CALLBACK$, $SUBSCRIBER$);&#10;$END$" description="Template that subscribes to an event in Bus" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA_BUS" expression="" defaultValue="&quot;Hydra.bus&quot;" alwaysStopAt="true" />
+    <variable name="CHANNEL" expression="" defaultValue="&quot;channel&quot;" alwaysStopAt="true" />
+    <variable name="EVENT_NAME" expression="" defaultValue="&quot;item:action&quot;" alwaysStopAt="true" />
+    <variable name="CALLBACK" expression="" defaultValue="&quot;function(){}&quot;" alwaysStopAt="true" />
+    <variable name="SUBSCRIBER" expression="" defaultValue="&quot;this&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hydra_unsubscribe_from" value="$HYDRA_BUS$.unsubscribeFrom('$CHANNEL$', '$EVENT_NAME$', $SUBSCRIBER$);&#10;$END$" description="Template that unsubscribes from an event in Bus" toReformat="true" toShortenFQNames="true">
+    <variable name="HYDRA_BUS" expression="" defaultValue="&quot;Hydra.bus&quot;" alwaysStopAt="true" />
+    <variable name="CHANNEL" expression="" defaultValue="&quot;channel&quot;" alwaysStopAt="true" />
+    <variable name="EVENT_NAME" expression="" defaultValue="&quot;item:action&quot;" alwaysStopAt="true" />
+    <variable name="SUBSCRIBER" expression="" defaultValue="&quot;this&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
+
